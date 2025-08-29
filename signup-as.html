@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <div class="main relative">
+        <div class="max-w-[1240px] px-5 mx-auto pt-[60px] z-[-1] identity-wraper top-0 ">
+            <div class="logo-image">
+                <a href="index.html">
+                    <img src="./assets/images/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="signup-as-wraper max-w-[450px] mx-auto mt-8">
+                <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">I would like to signup as:</h3>
+                <div class="signup-as-btn-wraper flex flex-col gap-[32px]">
+                    <a href="javscript:void(0)" class="sign-up-option px-4 py-3 rounded-[10px] border-[2px] border-[transparent] bg-color3 w-[100%] transition-all duration-300">
+                        <span class=" text-color1 dm-serif font-[400] text-[1.25rem] block">Seller</span>
+                        <span class="text-color2">Showcase and sell products, while collaborating with recommenders to reach more customers.</span>
+                    </a>
+                    <a href="javascript:void(0)" class="sign-up-option px-4 py-3 rounded-[10px] border-[2px] border-[transparent] bg-color3 w-[100%] transition-all duration-1000">
+                        <span class=" text-color1 dm-serif font-[400] text-[1.25rem] block">Recommender</span>
+                        <span class="text-color2">Promote products to buyers and earn commissions for successful sales</span>
+                    </a>
+                    <a href="javascript:void(0)" class="sign-up-option px-4 py-3 rounded-[10px] border-[2px] border-[transparent] bg-color3 w-[100%] transition-all duration-1000">
+                        <span class=" text-color1 dm-serif font-[400] text-[1.25rem] block">Buyer</span>
+                        <span class="text-color2">Purchase products that have been recommended to you by trusted recommenders.</span>
+                    </a>
+                    <div>
+                        <a id="confirm_user_identity" href="javascript:void(0)" class="bg-color5 p-4 rounded-[10px] w-[100%] text-[#fff] text-[1rem] text-center transition-all
+                        duration-300 hover:opacity-80">
+                            Confirm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="signup-footer max-w-[450px] mx-auto mobile:mt-[62px] mt-[32px]">
+                <ul class="flex flex-wrap gap-3 mobile:justify-between justify-center ">
+                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Terms & Conditions</a></li>
+                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Help</a></li>
+                </ul>
+                <div class="coppywright text-center text-color2 font-[600] mt-4">@ 2024 <a href="javascript:void(0)">Best Of British</a>. All Rights Reserved</div>
+            </div>
+        </div>
+        <div class="register-info-wraper top-0 absolute opacity-0 z-[-1] h-[100svh] overflow-hidden">
+            <div class="w-[100%] grid md:grid-cols-2 grid-cols-1 md:gap-[0px] gap-[30px]">
+                <div class="left-part">
+                    <div class="content-wraper max-w-[760px] px-[20px] mx-auto pt-[60px]">
+                        <div class="logo-image">
+                            <a href="index.html">
+                                <img src="./assets/images/Logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="login-wraper-inner max-w-[450px] mx-auto sm:mt-[120px] mt-[60px]">
+                            <h3 class="heading dm-serif 
+                            leading-[1.25] font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Create your account</h3>
+                            <form action="#" method="get" class="flex flex-col gap-[24px]">
+                                <div class="input-wraper flex mobilexl:flex-row flex-col gap-[16px]">
+                                    <input type="text" name="first-name" id="fname" placeholder="First name" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] flex-1">
+                                    <input type="text" name="last-name" id="lname" placeholder="Last name" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] flex-1">
+                                </div>
+                                <div class="input-wraper ">
+                                    <input type="email" name="email" id="email" placeholder="admin@mail.com" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] ">
+                                </div>
+                                <div class="input-wraper relative">
+                                    <input type="password" name="password" id="password" placeholder="********" class="input-field w-[100%] bg-color3 px-4 py-3.5 pe-[52px] rounded-[10px] focus:outline-0 placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600]">
+                                    <div class="icon absolute end-[16px] top-[50%] translate-y-[-50%] cursor-pointer">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                                <div class="input-wraper flex gap-[12px]">
+                                    <div class="remember-me flex mt-[3px]">
+                                        <input type="checkbox" name="remember" id="remember" class="cursor-pointer custom-checkbox">
+                                    </div>
+                                    <div class="by-processing font-[600] text-[1rem] text-color0">By proceeding, you agree to the <a href="javascript:void(0)" class="text-color6 underline">Terms and Conditions</a></div>
+                                </div>
+                                <div class="button-wraper">
+                                    <a href="javascript:void(0)" id="sign-up" class="bg-color6 p-4 rounded-[10px] w-[100%] text-[#fff] text-[1rem] text-center transition-all duration-300 hover:opacity-80">
+                                        Sign up
+                                    </a>
+                                    <div class="or-login-with flex items-center gap-[24px] mt-[32px] mb-[24px]">
+                                        <div class="line bg-color7 h-[1px] flex-1"></div>
+                                        <span class="text-color2 font-[600] text-[1rem]">Or login with</span>
+                                        <div class="line bg-color7 h-[1px] flex-1"></div>
+                                    </div>
+                                    <div class="social-login flex flex-wrap gap-[16px]">
+                                        <a href="javascript:void(0)" class="hover:bg-color3 flex-1 flex items-center justify-center gap-[8px] p-[15px] rounded-[10px] border-[1px] border-[#F1F5F9] transition-all duration-300">     
+                                            <img src="./assets/images/google.png" alt="google">
+                                            <span class="text-color0 font-[400] text-[1rem]">Google</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="hover:bg-color3 flex-1 flex items-center justify-center gap-[8px] p-[15px] rounded-[10px] border-[1px] border-[#F1F5F9] transition-all duration-300">     
+                                            <img src="./assets/images/apple.png" alt="apple">
+                                            <span class="text-color0 font-[400] text-[1rem]">Apple</span>
+                                        </a>
+                                    </div>
+                                    <div class="signup-link mt-[32px]">
+                                        <span class="text-color2 font-[600] text-[1rem]">Already have an account? <a href="./login.html" class="text-color5 underline">Sign In</a></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="signup-footer max-w-[450px] mx-auto mobile:mt-[120px] mt-[40px]">
+                                <ul class="flex flex-wrap gap-3 mobile:justify-between justify-center ">
+                                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Terms & Conditions</a></li>
+                                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Privacy Policy</a></li>
+                                    <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Help</a></li>
+                                </ul>
+                                <div class="coppywright text-center text-color2 font-[600] mt-4">@ 2024 <a href="javascript:void(0)">Best Of British</a>. All Rights Reserved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-part bg-color4 py-[40px] bg-[url('./assets/images/login.png');] bg-no-repeat bg-center bg-cover h-[100%]">
+                    <div class="custom-slick-dots py-[40px] img-slider-item-wraper global-slick-init flex flex-wrap w-[100%] h-[100%] items-center " data-infinite="true" data-autoplay="true" data-speed="3000"  data-dots="true">
+                        <div class="img-slider-item h-[100%] flex flex-col place-content-center px-[20px]">
+                            <div class="img-part max-w-[736px] max-h-[618px] aspect-[3/2] mx-auto">
+                                <img src="./assets/images/login-s1.png" class="h-[100%] w-[100%] object-cover" alt="login slider">
+                            </div>
+                            <div class="text-part max-w-[520px] mx-auto mt-[30px]">
+                                <h3 class="dm-serif lg:text-[1.8rem] text-[1rem] text-color8 text-center">Found something you like? Add it to your cart and checkout securely right within the app.</h3>
+                            </div>
+                        </div>
+                        <div class="img-slider-item h-[100%] flex flex-col place-content-center px-[20px]">
+                            <div class="img-part max-w-[736px] max-h-[618px] aspect-[3/2] mx-auto">
+                                <img src="./assets/images/login-s2.png" class="h-[100%] w-[100%] object-cover" alt="login slider">
+                            </div>
+                            <div class="text-part max-w-[520px] mx-auto mt-[30px]">
+                                <h3 class="dm-serif lg:text-[1.8rem] text-[1rem] text-color8 text-center">Explore a wide range of products and stores near you.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seller_agreement" class="modal-wraper hidden">
+            <div class="modal-backdrop fixed inset-0 bg-[#00020b66] z-[10] transition-opacity flex items-center justify-center">
+                <div class="modal-content bg-[#fff] relative top-[30px] max-w-[881px] max-h-[calc(100%-60px)] overflow-auto scrollbar-none rounded-[8px] p-[40px]">
+                    <div class="modal-header relative">  
+                        <h3 class="font-bold text-[2rem] text-color5 mb-[22px]">Seller Agreement</h3>
+                        <div class="close-icon absolute right-0 top-0 h-[40px] w-[40px] flex justify-center items-center rounded-[8px] bg-[#C1D5ED] text-[#486789] cursor-pointer">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body *:tracking-[0.3px] leading-[2] *:text-color8 *:text-[1rem]">
+                        <h3 class="subtitle font-[700]">Overview</h3>
+                        <p class="overview mb-[30px]">This Agreement ("Agreement") is made between the Seller ("You" or "Seller") and Best of British ("Platform"), a company providing a marketplace and recommendation platform for buyers, sellers, and recommenders. By signing up as a Seller and utilizing the platform, you agree to the terms and conditions set forth below.</p>
+                        <h3 class="subtitle font-[700]">1. Commission Structure</h3>
+                        <p>You agree to the following commission terms for any sales generated through the platform, either by Recommenders or directly:</p>
+                        <h4 class="font-[600]">1.1 Recommender Commission</h4>
+                        <p>You agree to pay a commission to Recommenders for sales made through their referrals. The commission percentage will be set by you during product listing, with the following platform minimum requirements:</p>
+                        <ul class="list-disc pl-[20px]">
+                            <li>Minimum Commission: 2% of the total sale value for Recommenders.</li>
+                        </ul>
+                        <h4 class="font-[600]">1.2 Platform Commission (Best of British)</h4>
+                        <p>In addition to the Recommender commission, you agree to pay the platform a commission for sales facilitated through the platform:</p>
+                        <ul class="list-disc pl-[20px]">
+                            <li>Platform Commission: 10% of the total sale value for Best of British.</li>
+                        </ul>
+                        <h4 class="font-[600]">1.3 Total Commission</h4>
+                        <p>The total commission (Recommender + Platform) will be automatically deducted from each sale. You will receive the remaining balance after commissions have been distributed.</p>
+                        <h3 class="subtitle font-[700]">2. Payment and Payout</h3>
+                        <h4 class="font-[600]">2.1 Payout Process</h4>
+                        <p>Sales earnings, after deductions for Recommender and Platform commissions, will be credited to your in-app wallet. Payouts will be processed weekly to your designated payment method.</p>
+                        <h4 class="font-[600]">2.2 Commission Adjustments</h4>
+                        <p>You may update the commission percentage for each product, but it must always meet the platform’s minimum requirements as stated in Section 1.</p>
+                        <h3 class="subtitle font-[700]">3. Promotions and Advertising</h3>
+                        <p>You are encouraged to use in-app promotional tools such as banners and featured product listings to increase visibility of your store. These promotional activities may incur additional fees, which will be clearly outlined before activation.</p>
+                        <h3 class="subtitle font-[700]">4. Subscription</h3>
+                        <h4 class="font-[600]">4.1 Subscription Terms</h4>
+                        <p>Sellers are required to subscribe to the platform’s services after the first 3 months of free usage. The subscription fee is £10 per month and will be automatically deducted from your in-app wallet or designated payment method.</p>
+                        <h4 class="font-[600]">4.2 Free Trial Period</h4>
+                        <p>You are eligible for a 3-month free trial from the date of registration as a Seller. During this period, you can cancel your subscription anytime without incurring any charges.</p>
+                        <h4 class="font-[600]">4.3 Subscription Cancellation</h4>
+                        <p>After the 3-month free trial, you may cancel your subscription at any time. If you cancel, the subscription will remain active until the end of the billing cycle. Once cancelled, you will no longer have access to premium seller features, and your store may be delisted from promotional features.</p>
+                        <h3 class="subtitle font-[700]">5. Responsibilities</h3>
+                        <h4 class="font-[600]">5.1 Accurate Listings</h4>
+                        <p>You agree to provide accurate product descriptions, pricing, and shipping details. You are solely responsible for fulfilling orders and handling returns or disputes with customers.</p>
+                        <h4 class="font-[600]">5.2 Compliance with Laws</h4>
+                        <p>You agree to comply with all local, national, and international laws regarding the sale of your products.</p>
+                        <h3 class="subtitle font-[700]">6. Termination</h3>
+                        <p>This Agreement may be terminated by either party at any time. However, any pending transactions and commissions owed will still be processed in accordance with the terms outlined above.</p>
+                        <h3 class="subtitle font-[700]">7. Acceptance</h3>
+                        <p>By clicking "Accept," you acknowledge that you have read, understood, and agree to these terms and conditions, including the commission structure for Recommenders and the Platform.</p>
+                    </div>
+                    <div class="modal-footer mt-[70px]">
+                        <div class="btn-wraper flex gap-[16px] justify-center *:w-[160px] *:text-center *:py-[12px] *:rounded-[8px] *:border-[1px] *:font[600] *:text-[1rem] *:transition-all *:ease-linear duration-300">
+                            <a id="close-modal" href="javascript:void(0)" class="bg-[#fff] border-color13 text-color14 hover:bg-color14 hover:text-[#fff]">Decline</a>
+                            <a href="tell-about-store.html" class="bg-color6 border-color6 text-[#fff] hover:bg-[#fff] hover:text-color6">Accept Agreement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

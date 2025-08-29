@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default  py-[36px]">
+            <div class=" container-1440">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative">
+                    <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
+                        <div class="logo-wraper leading-[1] shrink-0">
+                            <a href="index.html"><img src="./assets/images/Best of British.png" alt="Best Of British"></a>
+                        </div>
+                        <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[1] md:transition-none transition-all duration-[.8s] ease-in-out">
+                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap *:items-center *:flex md:py-[0px] py-[12px] md:gap-[0px] gap-[12px]">
+                            <li class="group/home menu-item">
+                                <a href="./index.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">Home<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/about menu-item active">
+                                <a href="./about.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/about:font-[600] group-hover/about:font-[600]">About<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/about:opacity-100 group-hover/about:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/recomender menu-item">
+                                <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Recommender<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/seller menu-item">
+                                <a href="./seller.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/seller:font-[600] group-hover/seller:font-[600]">Seller<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/seller:opacity-100 group-hover/seller:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/buyer menu-item">
+                                <a href="./buyer.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Buyer<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/faq menu-item">
+                                <a href="./faq.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/faq:font-[600] group-hover/faq:font-[600]">FAQ<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/faq:opacity-100 group-hover/faq:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/contact-us menu-item">
+                                <a href="./contact-us.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/contact-us:font-[600] group-hover/contact-us:font-[600]">Contact Us<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/contact-us:opacity-100 group-hover/contact-us:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
+                        <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
+                        <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-1">
+                                <a href="login.html" class="px-[12px] text-color5">Log in </a>
+                            </div>
+                            <div class="right-icon-2">
+                                <a href="signup-as.html" class="px-[12px] text-color5">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main bg-[#FFFFFD]">
+        <section class="about-us py-[32px]">
+            <div class="container-1440">
+                <div class="turn-find-earning-wraper flex flex-col md:flex-row">
+                    <div class="img-part flex-1">
+                        <img src="./assets/images/about-us-1.png" alt="about-us">
+                    </div>
+                    <div class="right-part bg-color10 flex-1 p-[24px]">
+                        <div class="text-part max-w-[464px] mx-auto h-[100%] flex flex-col gap-[24px] justify-around">
+                            <p class="subtitle lato text-color11 tracking-[2px]">BEST OF BRITISH</p>
+                            <div>
+                                <h2 class="lg:text-[48px] sm:text-[30px] text-[24px] text-color8 leading-[1.12]">About Us</h2>
+                                <p class="lato text-color12 text-[.94rem] leading-[1.5] mt-[10px] tracking-[1px] text-justify">Best of British is a unique platform designed to connect local stores with Buyers, Sellers, and Recommenders across the UK. Our goal is to bridge the gap between high-street shops and customers both near and far by leveraging the power of personal recommendations and live video shopping experiences.</p>
+                                <p class="lato text-color12 leading-[1.5] tracking-[1px] mt-[10px] text-justify">We believe in supporting small and medium-sized businesses while offering Buyers a convenient way to discover and purchase items recommended by people they trust. Whether you're a Seller looking to reach more customers, a Buyer seeking personal shopping experiences, or a recommender sharing products with friends and family, Best of British empowers you to engage in meaningful, seamless transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-mission py-[32px]">
+            <div class="container-1440">
+                <div class="turn-find-earning-wraper flex flex-col md:flex-row">
+                    <div class="right-part bg-color10 flex-1 p-[24px]">
+                        <div class="text-part max-w-[464px] mx-auto h-[100%] flex flex-col gap-[24px] justify-around">
+                            <p class="subtitle lato text-color11 tracking-[2px]">BEST OF BRITISH</p>
+                            <div>
+                                <h2 class="lg:text-[48px] sm:text-[30px] text-[24px] text-color8 leading-[1.12]">Our Mission</h2>
+                                <p class="lato text-color12 text-[.94rem] leading-[1.5] mt-[10px] text-justify">Our mission is to revitalise local commerce by providing a modern, tech-savvy platform where Buyers, Sellers, and Recommenders can thrive together.</p>
+                                <p class="lato text-color12 text-[.94rem] leading-[1.5] mt-[10px]">We aim to:</p>
+                                <ul class="lato text-justify text-color12 leading-[1.5] mt-[10px] marker:text-black list-disc pl-5 space-y-3">
+                                    <li>Empower Local Businesses: Giving high-street and independent stores tools to reach a wider audience.</li>
+                                    <li>Create Personal Connections: Allowing Buyers to experience live shopping and recommendations from people they trust.</li>
+                                    <li>Foster Community: Building a network where shoppers, Sellers, and Recommenders can support each other.</li>
+                                </ul>
+                                <p class="lato text-color12 text-[.94rem] leading-[1.5] mt-[10px]">At Best of British, we’re committed to making shopping personal, trustworthy, and community-driven while enhancing the experience for everyone involved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-part flex-1">
+                        <img src="./assets/images/our-mission.png" alt="our mission">
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="all-uder-one-roof md:py-[140px] mobile:py-[60px] py-[40px]">
+            <div class="container-1440">
+                <h2 class="max-w-[560px] mx-auto text-center md:text-[2.5rem] sm:text-[2rem] text-[1.7rem] leading-[1.12] font-[300] text-color12 uppercase">Discover the Very Best of British – All Together in One Place.</h2>
+                <p class="lato text-center text-[0.75rem] font-[300] text-color12 mt-[10px]">Best Of British</p>
+            </div>
+        </section> 
+        <section class="contact-us py-[32px]">
+            <div class="container-1440">
+                <div class="contact-us-wraper flex flex-col md:flex-row">
+                    <div class="img-part flex-1">
+                        <img src="./assets/images/contact-us.png" alt="contact-us">
+                    </div>
+                    <div class="right-part bg-color10 flex-1 p-[24px]">
+                        <div class="text-part max-w-[464px] mx-auto h-[100%] flex flex-col gap-[24px] justify-around">
+                            <p class="subtitle lato text-color11 tracking-[2px]">BEST OF BRITISH</p>
+                            <div>
+                                <h2 class="lg:text-[48px] sm:text-[30px] text-[24px] text-color8 leading-[1.12]">Contact Us</h2>
+                                <p class="lato text-color12 text-[.94rem] leading-[1.5] mt-[10px]">If you have any questions, concerns, or need support, feel free to reach out to our team. Simply fill out the contact form, and we'll get back to you as soon as possible.</p>
+                            </div>
+                            <form action="#" class="flex flex-col gap-[15px]">
+                                <div class="input-wraper items-center flex gap-[15px] flex-wrap *:w-[100%] *:p-[16px] *:rounded-[5px] *:flex-1 *:bg-color3 *:text-color2 lato">
+                                    <input type="text" placeholder="First name" class="placeholder:text-color2">
+                                    <input type="text" placeholder="Last name" class="placeholder:text-color2">
+                                </div>
+                                <div class="input-wraper *:w-[100%] *:p-[16px] *:rounded-[5px] *:bg-color3 *:text-color2 lato">
+                                    <input type="email" placeholder="Email" class="placeholder:text-color2">
+                                </div>
+                                <div class="input-wraper *:w-[100%] *:p-[16px] *:rounded-[5px] *:bg-color3 *:text-color2 lato">
+                                    <textarea  placeholder="Message" rows="4" class="placeholder:text-color2"></textarea>
+                                </div>
+                                <div class="btn-wraper *:p-[15px_17px] *:rounded-[5px] *:text-center">
+                                    <a href="javascript:void(0)" class=" w-[220px] text-[#ffffff] bg-color5">Send</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-top-part md:py-[120px] py-[50px]">
+            <div class="container-1440">
+                <div class="footer-widget-wraper flex sm:flex-row flex-col gap-[30px] flex-wrap justify-between">
+                    <div class="left-part sm:max-w-[302px] text-color5">
+                        <p class="lato font-[700] tracking-[1px]">Sign up For Early Access and get updates from Best of British</p>
+                        <form action="#" method="get" class="mt-[20px] pb-[10px] flex *:text-color5 *:text-[18px] border-b-[1px] border-[#CCCBC8]">
+                            <input type="email" placeholder="Email" class="flex-1 placeholder:text-color5 placeholder:text-[18px] pe-[10px]">
+                            <a href="javascript:void(0)" class="underline">Join</a>
+                        </form>
+                    </div>
+                    <div class="right-part-wraper flex-1 flex justify-center">
+                        <div class="right-part max-w-[500px] flex gap-[20px] flex-wrap justify-between flex-1">
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Shop</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Company</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">About Us</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Our Mission</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Info</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-part pb-[38px]">
+            <div class="container-1440">
+                <div class="footer-bottom-part-wraper flex lg:justify-between justify-center gap-[30px] flex-wrap">
+                    <div class="social-links flex gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <a href="javascript:void(0)" class="">Facebook</a>
+                        <a href="javascript:void(0)" class="">Instagram</a>
+                        <a href="javascript:void(0)" class="">LinkedIn</a>
+                    </div>
+                    <div class="coppyright-div flex justify-center flex-wrap gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <p class="text-center">©2024 <a href="javascript:void(0)">BEST OF BRITISH</a>. ALL RIGHTS RESERVED</p>
+                        <a href="javascript:void(0)">PRIVACY POLICY</a>
+                        <a href="javascript:void(0)">TERMS OF USES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

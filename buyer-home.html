@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default  py-[36px]">
+            <div class=" container-1440">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative">
+                    <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
+                        <div class="logo-wraper leading-[1] shrink-0 flex gap-[24px]">
+                            <div class="buyer_control_menu relative">
+                                <div class="icon_menu cursor-pointer">
+                                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="0.5" x2="20" y2="0.5" stroke="#1F3650"/>
+                                        <line y1="6.5" x2="20" y2="6.5" stroke="#1F3650"/>
+                                        <line y1="12.5" x2="11.7241" y2="12.5" stroke="#1F3650"/>
+                                    </svg>
+                                </div>
+                                <div class="shadow_bg fixed inset-0 z-[3] bg-[#1f36501a] hidden"></div>
+                                <div class="buyer_menu_items absolute p-[40px] z-[4] w-[270px] bg-[#fff] top-[calc(100%+12px)] left-0 right-0 transition-all duration-[.3s] ease-in-out hidden">
+                                    <div class="text-[#A3A3A0] text-[0.625rem] font-[600] mb-[12px] tracking-[1.5px] uppercase">Menu</div>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase">
+                                        <li><a href="buyer-home.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Home</a></li>
+                                        <li><a href="./message_chatiing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Messages <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">29</span></a></li>
+                                        <li><a href="all-notification.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Notifications <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">99</span></a></li>
+                                        <li><a href="./buyer-profile-refarrel-history.html" class="font-[600] flex justify-between items-center traking-[1.5px]">My Profile</a></li>
+                                    </ul>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase mt-[42px]">
+                                        <li><a href="buyer-about.html" class="font-[600] flex justify-between items-center traking-[1.5px]">About</a></li>
+                                        <li><a href="faq.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Faq</a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="index.html"><img src="./assets/images/Best of British.png" alt="Best Of British"></a>
+                        </div>
+                        <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[1] md:transition-none transition-all duration-[.8s] ease-in-out">
+                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap *:items-center *:flex md:py-[0px] py-[12px] md:gap-[0px] gap-[12px]">
+                            <li class="group/home menu-item active">
+                                <a href="./index.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">Home<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/about menu-item">
+                                <a href="./about.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/about:font-[600] group-hover/about:font-[600]">About<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/about:opacity-100 group-hover/about:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/recomender menu-item">
+                                <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Recommender<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/seller menu-item">
+                                <a href="./seller.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/seller:font-[600] group-hover/seller:font-[600]">Seller<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/seller:opacity-100 group-hover/seller:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/buyer menu-item">
+                                <a href="./buyer.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Buyer<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/faq menu-item">
+                                <a href="./faq.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/faq:font-[600] group-hover/faq:font-[600]">FAQ<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/faq:opacity-100 group-hover/faq:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/contact-us menu-item">
+                                <a href="./contact-us.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/contact-us:font-[600] group-hover/contact-us:font-[600]">Contact Us<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/contact-us:opacity-100 group-hover/contact-us:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
+                        <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
+                        <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-1">
+                                <a href="login.html" class="px-[12px] text-color5">Log in </a>
+                            </div>
+                            <div class="right-icon-2">
+                                <a href="signup-as.html" class="px-[12px] text-color5">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main bg-[#F7F7F5]">
+        <section class="hero_section">
+            <div class="container-1440">
+                <div class="hero_section-bg relative bg-[url('./assets/images/banner-bg.png')] bg-no-repeat bg-center bg-cover before:content-[''] before:bg-[#1f365080] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0">
+                    <div class="hero_section_wraper px-[15px] pt-[197px] pb-[197px] max-w-[1145px] mx-auto relative">
+                        <div class="text_part">
+                            <h1 class="dm-serif italic text-[4rem] leading-[1.2] text-center text-[#ffffff]">Welcome to Best of British</h1>
+                            <p class="max-w-[475px] mx-auto text-center text-[1.25rem] text-[#ffffff] mt-[24px]">Discover & Shop British Retailers, Earn Commissions, and Grow Your Store!</p>
+                        </div>
+                        <div class="search_part mt-[30px]">
+                            <div class="search_wraper flex flex-wrap gap-[12px]">
+                                <div class="input_wraper relative flex-[1_1_250px]">
+                                    <input type="text" class="search_box w-full rounded-[10px] py-[20px] pl-[58px] pr-[20px] text-[.875rem] font-[600] leading-[1.4] text-color1 placeholder:text-color1" placeholder="What are you looking for?">
+                                    <div class="icon absolute left-[20px] top-[50%] translate-y-[-50%]">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.3754 17.0004L13.3254 12.9504M13.3254 12.9504C13.9754 12.3003 14.491 11.5286 14.8428 10.6793C15.1946 9.82995 15.3757 8.91966 15.3757 8.00036C15.3757 7.08106 15.1946 6.17076 14.8428 5.32144C14.491 4.47211 13.9754 3.7004 13.3254 3.05036C12.6753 2.40031 11.9036 1.88467 11.0543 1.53287C10.205 1.18107 9.29466 1 8.37536 1C7.45606 1 6.54576 1.18107 5.69644 1.53287C4.84711 1.88467 4.0754 2.40031 3.42536 3.05036C2.11254 4.36318 1.375 6.14375 1.375 8.00036C1.375 9.85697 2.11254 11.6375 3.42536 12.9504C4.73818 14.2632 6.51875 15.0007 8.37536 15.0007C10.232 15.0007 12.0125 14.2632 13.3254 12.9504Z" stroke="#666562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>   
+                                <div class="input_wraper relative flex-[1_1_250px]">
+                                    <input type="text" class="search_box w-full rounded-[10px] py-[20px] pl-[58px] pr-[20px] text-[.875rem] font-[600] leading-[1.4] text-color1 placeholder:text-color1" placeholder="What are you looking for?">
+                                    <div class="icon absolute left-[20px] top-[50%] translate-y-[-50%]">
+                                        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6484 9.27148C13.6484 10.3324 13.227 11.3498 12.4769 12.0999C11.7267 12.8501 10.7093 13.2715 9.64844 13.2715C8.58757 13.2715 7.57016 12.8501 6.82001 12.0999C6.06986 11.3498 5.64844 10.3324 5.64844 9.27148C5.64844 8.21062 6.06986 7.1932 6.82001 6.44306C7.57016 5.69291 8.58757 5.27148 9.64844 5.27148C10.7093 5.27148 11.7267 5.69291 12.4769 6.44306C13.227 7.1932 13.6484 8.21062 13.6484 9.27148ZM11.6484 9.27148C11.6484 9.80192 11.4377 10.3106 11.0627 10.6857C10.6876 11.0608 10.1789 11.2715 9.64844 11.2715C9.118 11.2715 8.6093 11.0608 8.23422 10.6857C7.85915 10.3106 7.64844 9.80192 7.64844 9.27148C7.64844 8.74105 7.85915 8.23234 8.23422 7.85727C8.6093 7.4822 9.118 7.27148 9.64844 7.27148C10.1789 7.27148 10.6876 7.4822 11.0627 7.85727C11.4377 8.23234 11.6484 8.74105 11.6484 9.27148Z" fill="#666562"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.169 15.5181C1.87984 14.2907 0.983609 12.7085 0.593639 10.9717C0.20367 9.23492 0.337479 7.42149 0.978146 5.76074C1.61881 4.1 2.73756 2.66652 4.19292 1.6416C5.64828 0.61668 7.37488 0.0463399 9.15438 0.00270542C10.9339 -0.040929 12.6864 0.444102 14.1902 1.39646C15.6941 2.34882 16.8817 3.72574 17.603 5.35309C18.3243 6.98044 18.5468 8.78514 18.2425 10.539C17.9381 12.2928 17.1205 13.917 15.893 15.2061L9.68701 21.7241L3.169 15.5181ZM14.445 13.8271L9.618 18.8971L4.548 14.0701C3.54537 13.1154 2.84834 11.8849 2.54505 10.5341C2.24176 9.18326 2.34584 7.77285 2.84412 6.48119C3.3424 5.18953 4.2125 4.07462 5.34441 3.27746C6.47631 2.4803 7.81918 2.03668 9.2032 2.00269C10.5872 1.96871 11.9502 2.3459 13.1199 3.08655C14.2896 3.8272 15.2133 4.89806 15.7744 6.16371C16.3355 7.42936 16.5086 8.83297 16.272 10.197C16.0354 11.5611 15.3996 12.8244 14.445 13.8271Z" fill="#666562"/>
+                                        </svg>
+                                    </div>
+                                </div> 
+                                <div class="search-btn">
+                                    <a href="javascript:void(0)" class="text-[1rem] text-[#fff] leading-[1.5] text-center font-[600] bg-[#1F3650] p-[17px_50px] rounded-[10px]">Search</a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="retailers md:pt-[120px] md:pb-[90px] mobilexl:pt-[60px] mobilexl:pb-[40px] pt-[40px] pb-[24px]">
+            <div class="container-1440">
+                <div class="heading-part flex justify-between items-end flex-wrap gap-[20px]">
+                    <div class="text-part">
+                        <div class="subtitle uppercase text-[0.875rem] leading-[2] tracking-[2px] text-color5">BEST OF BRITISH</div>
+                        <h2 class="second_heading font-[600] text-color5 text-[2.5rem] leading-[1.12] traking-[1px]">Retailers</h2>
+                    </div>
+                    <div class="btn-part text-end">
+                        <span class="arrow_part slick_custom_arrows flex mb-[10px] gap-[24px] cursor-pointer *:hover:text-[#1F3650]"></span>
+                        <a href="javascript:void(0)" class="text-[1.25rem] text-color4 leading-[1.1] font-[600]">View All</a>
+                    </div>
+                </div>
+                <div class="slider-part mt-[60px]">
+                    <div class="slider_wraper flex gap-[20px] global-slick-init" data-slidestoshow="6" data-infinite="true" data-autoplay="false" data-speed="1000"  data-dots="false" data-arrows="true" data-appendarrows=".arrow_part" 
+                    data-responsive='[{"breakpoint": 1440,"settings": {"slidesToShow": 5}},{"breakpoint": 1280,"settings": {"slidesToShow": 4}},{"breakpoint": 1024,"settings": {"slidesToShow": 3}},{"breakpoint": 768,"settings": {"slidesToShow": 3}},{"breakpoint": 640, "settings": {"slidesToShow": 2}},{"breakpoint": 475, "settings": {"slidesToShow": 1}}]'
+                    data-prevarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_1_4064)">
+                            <path d="M0.676 11.032C0.551879 10.9853 0.414298 10.9899 0.293525 11.0446C0.172751 11.0994 0.0786782 11.1999 0.0320001 11.324C-0.014678 11.4481 -0.0101373 11.5857 0.0446233 11.7065C0.099384 11.8272 0.199879 11.9213 0.324 11.968C5.552 13.928 9.799 17.523 13.076 22.765C13.1463 22.8775 13.2584 22.9574 13.3876 22.9872C13.5168 23.017 13.6525 22.9943 13.765 22.924C13.8775 22.8537 13.9574 22.7416 13.9872 22.6124C14.017 22.4832 13.9943 22.3475 13.924 22.235C10.534 16.811 6.114 13.072 0.676 11.032Z" fill="#1F3650"/>
+                            <path d="M0.676 11.968C0.551879 12.0147 0.414298 12.0101 0.293525 11.9554C0.172751 11.9006 0.0786782 11.8001 0.0320001 11.676C-0.014678 11.5519 -0.0101373 11.4143 0.0446233 11.2935C0.099384 11.1728 0.199879 11.0787 0.324 11.032C5.552 9.072 9.8 5.478 13.076 0.235003C13.1463 0.122551 13.2584 0.0426245 13.3876 0.0128062C13.5168 -0.0170121 13.6525 0.00572032 13.765 0.0760027C13.8775 0.146285 13.9574 0.25836 13.9872 0.387573C14.017 0.516785 13.9943 0.652551 13.924 0.765003C10.534 6.189 6.114 9.928 0.676 11.968Z" fill="#1F3650"/>
+                            <path d="M0.5 12C0.367392 12 0.240215 11.9473 0.146447 11.8536C0.0526784 11.7598 0 11.6326 0 11.5C0 11.3674 0.0526784 11.2402 0.146447 11.1464C0.240215 11.0527 0.367392 11 0.5 11H53.5C53.6326 11 53.7598 11.0527 53.8536 11.1464C53.9473 11.2402 54 11.3674 54 11.5C54 11.6326 53.9473 11.7598 53.8536 11.8536C53.7598 11.9473 53.6326 12 53.5 12H0.5Z" fill="#1F3650"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_4064">
+                            <rect width="54" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>'
+                    data-nextarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_4068)">
+                        <path d="M53.324 11.032C53.4481 10.9853 53.5857 10.9899 53.7065 11.0446C53.8273 11.0994 53.9213 11.1999 53.968 11.324C54.0147 11.4481 54.0101 11.5857 53.9554 11.7065C53.9006 11.8272 53.8001 11.9213 53.676 11.968C48.448 13.928 44.201 17.523 40.924 22.765C40.8537 22.8775 40.7416 22.9574 40.6124 22.9872C40.4832 23.017 40.3475 22.9943 40.235 22.924C40.1226 22.8537 40.0426 22.7416 40.0128 22.6124C39.983 22.4832 40.0057 22.3475 40.076 22.235C43.466 16.811 47.886 13.072 53.324 11.032Z" fill="#1F3650"/>
+                        <path d="M53.324 11.968C53.4481 12.0147 53.5857 12.0101 53.7065 11.9554C53.8273 11.9006 53.9213 11.8001 53.968 11.676C54.0147 11.5519 54.0101 11.4143 53.9554 11.2935C53.9006 11.1728 53.8001 11.0787 53.676 11.032C48.448 9.072 44.2 5.478 40.924 0.235003C40.8537 0.122551 40.7416 0.0426245 40.6124 0.0128062C40.4832 -0.0170121 40.3475 0.00572032 40.235 0.0760027C40.1226 0.146285 40.0426 0.25836 40.0128 0.387573C39.983 0.516785 40.0057 0.652551 40.076 0.765003C43.466 6.189 47.886 9.928 53.324 11.968Z" fill="#1F3650"/>
+                        <path d="M53.5 12C53.6326 12 53.7598 11.9473 53.8536 11.8536C53.9473 11.7598 54 11.6326 54 11.5C54 11.3674 53.9473 11.2402 53.8536 11.1464C53.7598 11.0527 53.6326 11 53.5 11H0.5C0.367392 11 0.240215 11.0527 0.146447 11.1464C0.0526784 11.2402 0 11.3674 0 11.5C0 11.6326 0.0526784 11.7598 0.146447 11.8536C0.240215 11.9473 0.367392 12 0.5 12H53.5Z" fill="#1F3650"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_4068">
+                        <rect width="54" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>'>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/rolex.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Rolex</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/rl.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Ralph lauren</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/uni.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Ralph lauren</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/rolex.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Rolex</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/rl.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Ralph lauren</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/uni.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Ralph lauren</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/rl.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Ralph lauren</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured_deals md:pt-[120px] md:pb-[90px] mobilexl:pt-[60px] mobilexl:pb-[40px] pt-[40px] pb-[24px]">
+            <div class="container-1440">
+                <div class="heading-part flex justify-between items-end flex-wrap gap-[20px]">
+                    <div class="text-part">
+                        <div class="subtitle uppercase text-[0.875rem] leading-[2] tracking-[2px] text-color5">BEST OF BRITISH</div>
+                        <h2 class="second_heading font-[600] text-color5 text-[2.5rem] leading-[1.12] traking-[1px]">Featured Deals</h2>
+                    </div>
+                    <div class="btn-part text-end">
+                        <span class="arrow_part2 slick_custom_arrows flex mb-[10px] gap-[24px] cursor-pointer *:hover:text-[#1F3650]"></span>
+                        <a href="javascript:void(0)" class="text-[1.25rem] text-color4 leading-[1.1] font-[600]">View All</a>
+                    </div>
+                </div>
+                <div class="slider-part mt-[60px]">
+                    <div class="slider_wraper flex gap-[20px] global-slick-init" data-slidestoshow="3" data-infinite="true" data-autoplay="false" data-speed="1000"  data-dots="false" data-arrows="true" data-appendarrows=".arrow_part2" 
+                    data-responsive='[{"breakpoint": 1280,"settings": {"slidesToShow": 2}}, {"breakpoint": 1024,"settings": {"slidesToShow": 1}}]'
+                    data-prevarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_1_4064)">
+                            <path d="M0.676 11.032C0.551879 10.9853 0.414298 10.9899 0.293525 11.0446C0.172751 11.0994 0.0786782 11.1999 0.0320001 11.324C-0.014678 11.4481 -0.0101373 11.5857 0.0446233 11.7065C0.099384 11.8272 0.199879 11.9213 0.324 11.968C5.552 13.928 9.799 17.523 13.076 22.765C13.1463 22.8775 13.2584 22.9574 13.3876 22.9872C13.5168 23.017 13.6525 22.9943 13.765 22.924C13.8775 22.8537 13.9574 22.7416 13.9872 22.6124C14.017 22.4832 13.9943 22.3475 13.924 22.235C10.534 16.811 6.114 13.072 0.676 11.032Z" fill="#1F3650"/>
+                            <path d="M0.676 11.968C0.551879 12.0147 0.414298 12.0101 0.293525 11.9554C0.172751 11.9006 0.0786782 11.8001 0.0320001 11.676C-0.014678 11.5519 -0.0101373 11.4143 0.0446233 11.2935C0.099384 11.1728 0.199879 11.0787 0.324 11.032C5.552 9.072 9.8 5.478 13.076 0.235003C13.1463 0.122551 13.2584 0.0426245 13.3876 0.0128062C13.5168 -0.0170121 13.6525 0.00572032 13.765 0.0760027C13.8775 0.146285 13.9574 0.25836 13.9872 0.387573C14.017 0.516785 13.9943 0.652551 13.924 0.765003C10.534 6.189 6.114 9.928 0.676 11.968Z" fill="#1F3650"/>
+                            <path d="M0.5 12C0.367392 12 0.240215 11.9473 0.146447 11.8536C0.0526784 11.7598 0 11.6326 0 11.5C0 11.3674 0.0526784 11.2402 0.146447 11.1464C0.240215 11.0527 0.367392 11 0.5 11H53.5C53.6326 11 53.7598 11.0527 53.8536 11.1464C53.9473 11.2402 54 11.3674 54 11.5C54 11.6326 53.9473 11.7598 53.8536 11.8536C53.7598 11.9473 53.6326 12 53.5 12H0.5Z" fill="#1F3650"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_4064">
+                            <rect width="54" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>'
+                    data-nextarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_4068)">
+                        <path d="M53.324 11.032C53.4481 10.9853 53.5857 10.9899 53.7065 11.0446C53.8273 11.0994 53.9213 11.1999 53.968 11.324C54.0147 11.4481 54.0101 11.5857 53.9554 11.7065C53.9006 11.8272 53.8001 11.9213 53.676 11.968C48.448 13.928 44.201 17.523 40.924 22.765C40.8537 22.8775 40.7416 22.9574 40.6124 22.9872C40.4832 23.017 40.3475 22.9943 40.235 22.924C40.1226 22.8537 40.0426 22.7416 40.0128 22.6124C39.983 22.4832 40.0057 22.3475 40.076 22.235C43.466 16.811 47.886 13.072 53.324 11.032Z" fill="#1F3650"/>
+                        <path d="M53.324 11.968C53.4481 12.0147 53.5857 12.0101 53.7065 11.9554C53.8273 11.9006 53.9213 11.8001 53.968 11.676C54.0147 11.5519 54.0101 11.4143 53.9554 11.2935C53.9006 11.1728 53.8001 11.0787 53.676 11.032C48.448 9.072 44.2 5.478 40.924 0.235003C40.8537 0.122551 40.7416 0.0426245 40.6124 0.0128062C40.4832 -0.0170121 40.3475 0.00572032 40.235 0.0760027C40.1226 0.146285 40.0426 0.25836 40.0128 0.387573C39.983 0.516785 40.0057 0.652551 40.076 0.765003C43.466 6.189 47.886 9.928 53.324 11.968Z" fill="#1F3650"/>
+                        <path d="M53.5 12C53.6326 12 53.7598 11.9473 53.8536 11.8536C53.9473 11.7598 54 11.6326 54 11.5C54 11.3674 53.9473 11.2402 53.8536 11.1464C53.7598 11.0527 53.6326 11 53.5 11H0.5C0.367392 11 0.240215 11.0527 0.146447 11.1464C0.0526784 11.2402 0 11.3674 0 11.5C0 11.6326 0.0526784 11.7598 0.146447 11.8536C0.240215 11.9473 0.367392 12 0.5 12H53.5Z" fill="#1F3650"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_4068">
+                        <rect width="54" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>'>
+                        <div class="slider_items-wraper">
+                            <div class="grid mobile:grid-cols-[50%,_50%] items-center rounded-[4px] bg-[#a5a6ae1a]">
+                                <div class="text_part p-[26px]">
+                                    <h4 class="title dm-serif font-[400] text-[1.5rem] leading-[1.1] tracking-[-.1px] text-[#020306] ">Rolex Oyster Perpetual</h4>
+                                    <div class="quality text-[1rem] text-[#020306] leading-[1.25] opacity-[0.5]">39 mm, Oystersteel</div>
+                                    <div class="price dm-serif text-[2rem] text-[#AA7E6F] mt-[8px]">£5,495.00</div>
+                                </div>
+                                <div class="img_part">
+                                    <img src="./assets/images/Rectangle.png" alt="product" class="w-full aspect-[1/1]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items-wraper">
+                            <div class="grid mobile:grid-cols-[50%,_50%] items-center rounded-[4px] bg-[#a5a6ae1a]">
+                                <div class="text_part p-[26px]">
+                                    <h4 class="title dm-serif font-[400] text-[1.5rem] leading-[1.1] tracking-[-.1px] text-[#020306] ">Rolex Oyster Perpetual</h4>
+                                    <div class="quality text-[1rem] text-[#020306] leading-[1.25] opacity-[0.5]">39 mm, Oystersteel</div>
+                                    <div class="price dm-serif text-[2rem] text-[#AA7E6F] mt-[8px]">£5,495.00</div>
+                                </div>
+                                <div class="img_part">
+                                    <img src="./assets/images/Rectangle.png" alt="product" class="w-full aspect-[1/1]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items-wraper">
+                            <div class="grid mobile:grid-cols-[50%,_50%] items-center rounded-[4px] bg-[#a5a6ae1a]">
+                                <div class="text_part p-[26px]">
+                                    <h4 class="title dm-serif font-[400] text-[1.5rem] leading-[1.1] tracking-[-.1px] text-[#020306] ">Rolex Oyster Perpetual</h4>
+                                    <div class="quality text-[1rem] text-[#020306] leading-[1.25] opacity-[0.5]">39 mm, Oystersteel</div>
+                                    <div class="price dm-serif text-[2rem] text-[#AA7E6F] mt-[8px]">£5,495.00</div>
+                                </div>
+                                <div class="img_part">
+                                    <img src="./assets/images/Rectangle.png" alt="product" class="w-full aspect-[1/1]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items-wraper">
+                            <div class="grid mobile:grid-cols-[50%,_50%] items-center rounded-[4px] bg-[#a5a6ae1a]">
+                                <div class="text_part p-[26px]">
+                                    <h4 class="title dm-serif font-[400] text-[1.5rem] leading-[1.1] tracking-[-.1px] text-[#020306] ">Rolex Oyster Perpetual</h4>
+                                    <div class="quality text-[1rem] text-[#020306] leading-[1.25] opacity-[0.5]">39 mm, Oystersteel</div>
+                                    <div class="price dm-serif text-[2rem] text-[#AA7E6F] mt-[8px]">£5,495.00</div>
+                                </div>
+                                <div class="img_part">
+                                    <img src="./assets/images/Rectangle.png" alt="product" class="w-full aspect-[1/1]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories md:pt-[120px] md:pb-[90px] mobilexl:pt-[60px] mobilexl:pb-[40px] pt-[40px] pb-[24px]">
+            <div class="container-1440">
+                <div class="heading-part flex justify-between items-end flex-wrap gap-[20px]">
+                    <div class="text-part">
+                        <div class="subtitle uppercase text-[0.875rem] leading-[2] tracking-[2px] text-color5">BEST OF BRITISH</div>
+                        <h2 class="second_heading font-[600] text-color5 text-[2.5rem] leading-[1.12] traking-[1px]">Categories</h2>
+                    </div>
+                    <div class="btn-part text-end">
+                        <span class="arrow_part3 slick_custom_arrows flex mb-[10px] gap-[24px] cursor-pointer *:hover:text-[#1F3650]"></span>
+                        <a href="javascript:void(0)" class="text-[1.25rem] text-color4 leading-[1.1] font-[600]">View All</a>
+                    </div>
+                </div>
+                <div class="slider-part mt-[60px]">
+                    <div class="slider_wraper flex gap-[20px] global-slick-init" data-slidestoshow="3" data-infinite="true" data-autoplay="false" data-speed="1000"  data-dots="false" data-arrows="true" data-appendarrows=".arrow_part3" 
+                    data-responsive='[{"breakpoint": 640, "settings": {"slidesToShow": 2}},{"breakpoint": 475, "settings": {"slidesToShow": 1}}]'
+                    data-prevarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_1_4064)">
+                            <path d="M0.676 11.032C0.551879 10.9853 0.414298 10.9899 0.293525 11.0446C0.172751 11.0994 0.0786782 11.1999 0.0320001 11.324C-0.014678 11.4481 -0.0101373 11.5857 0.0446233 11.7065C0.099384 11.8272 0.199879 11.9213 0.324 11.968C5.552 13.928 9.799 17.523 13.076 22.765C13.1463 22.8775 13.2584 22.9574 13.3876 22.9872C13.5168 23.017 13.6525 22.9943 13.765 22.924C13.8775 22.8537 13.9574 22.7416 13.9872 22.6124C14.017 22.4832 13.9943 22.3475 13.924 22.235C10.534 16.811 6.114 13.072 0.676 11.032Z" fill="#1F3650"/>
+                            <path d="M0.676 11.968C0.551879 12.0147 0.414298 12.0101 0.293525 11.9554C0.172751 11.9006 0.0786782 11.8001 0.0320001 11.676C-0.014678 11.5519 -0.0101373 11.4143 0.0446233 11.2935C0.099384 11.1728 0.199879 11.0787 0.324 11.032C5.552 9.072 9.8 5.478 13.076 0.235003C13.1463 0.122551 13.2584 0.0426245 13.3876 0.0128062C13.5168 -0.0170121 13.6525 0.00572032 13.765 0.0760027C13.8775 0.146285 13.9574 0.25836 13.9872 0.387573C14.017 0.516785 13.9943 0.652551 13.924 0.765003C10.534 6.189 6.114 9.928 0.676 11.968Z" fill="#1F3650"/>
+                            <path d="M0.5 12C0.367392 12 0.240215 11.9473 0.146447 11.8536C0.0526784 11.7598 0 11.6326 0 11.5C0 11.3674 0.0526784 11.2402 0.146447 11.1464C0.240215 11.0527 0.367392 11 0.5 11H53.5C53.6326 11 53.7598 11.0527 53.8536 11.1464C53.9473 11.2402 54 11.3674 54 11.5C54 11.6326 53.9473 11.7598 53.8536 11.8536C53.7598 11.9473 53.6326 12 53.5 12H0.5Z" fill="#1F3650"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_4064">
+                            <rect width="54" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>'
+                    data-nextarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_4068)">
+                        <path d="M53.324 11.032C53.4481 10.9853 53.5857 10.9899 53.7065 11.0446C53.8273 11.0994 53.9213 11.1999 53.968 11.324C54.0147 11.4481 54.0101 11.5857 53.9554 11.7065C53.9006 11.8272 53.8001 11.9213 53.676 11.968C48.448 13.928 44.201 17.523 40.924 22.765C40.8537 22.8775 40.7416 22.9574 40.6124 22.9872C40.4832 23.017 40.3475 22.9943 40.235 22.924C40.1226 22.8537 40.0426 22.7416 40.0128 22.6124C39.983 22.4832 40.0057 22.3475 40.076 22.235C43.466 16.811 47.886 13.072 53.324 11.032Z" fill="#1F3650"/>
+                        <path d="M53.324 11.968C53.4481 12.0147 53.5857 12.0101 53.7065 11.9554C53.8273 11.9006 53.9213 11.8001 53.968 11.676C54.0147 11.5519 54.0101 11.4143 53.9554 11.2935C53.9006 11.1728 53.8001 11.0787 53.676 11.032C48.448 9.072 44.2 5.478 40.924 0.235003C40.8537 0.122551 40.7416 0.0426245 40.6124 0.0128062C40.4832 -0.0170121 40.3475 0.00572032 40.235 0.0760027C40.1226 0.146285 40.0426 0.25836 40.0128 0.387573C39.983 0.516785 40.0057 0.652551 40.076 0.765003C43.466 6.189 47.886 9.928 53.324 11.968Z" fill="#1F3650"/>
+                        <path d="M53.5 12C53.6326 12 53.7598 11.9473 53.8536 11.8536C53.9473 11.7598 54 11.6326 54 11.5C54 11.3674 53.9473 11.2402 53.8536 11.1464C53.7598 11.0527 53.6326 11 53.5 11H0.5C0.367392 11 0.240215 11.0527 0.146447 11.1464C0.0526784 11.2402 0 11.3674 0 11.5C0 11.6326 0.0526784 11.7598 0.146447 11.8536C0.240215 11.9473 0.367392 12 0.5 12H53.5Z" fill="#1F3650"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_4068">
+                        <rect width="54" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>'>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/cta1.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Clothing & Accessories</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/cta2.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Clothing & Accessories</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/cta1.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">HOME & KITCHEN</div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img ">
+                                <img src="./assets/images/cta2.png" alt="retailers" class="w-full h-full">
+                            </div>
+                            <div class="text-color5 sm:text-[1.6rem] text-[1rem] text-center">Electronics & Gadgets </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured_products md:pt-[120px] md:pb-[90px] mobilexl:pt-[60px] mobilexl:pb-[40px] pt-[40px] pb-[24px]">
+            <div class="container-1440">
+                <div class="heading-part flex justify-between items-end flex-wrap gap-[20px]">
+                    <div class="text-part">
+                        <div class="subtitle uppercase text-[0.875rem] leading-[2] tracking-[2px] text-color5">BEST OF BRITISH</div>
+                        <h2 class="second_heading font-[600] text-color5 text-[2.5rem] leading-[1.12] traking-[1px]">Featured Products</h2>
+                    </div>
+                    <div class="btn-part text-end">
+                        <span class="arrow_part4 slick_custom_arrows flex mb-[10px] gap-[24px] cursor-pointer *:hover:text-[#1F3650]"></span>
+                        <a href="javascript:void(0)" class="text-[1.25rem] text-color4 leading-[1.1] font-[600]">View All</a>
+                    </div>
+                </div>
+                <div class="slider-part mt-[60px]">
+                    <div class="slider_wraper flex gap-[20px] global-slick-init" data-slidestoshow="3" data-infinite="true" data-autoplay="false" data-speed="1000"  data-dots="false" data-arrows="true" data-appendarrows=".arrow_part4" 
+                    data-responsive='[{"breakpoint": 640, "settings": {"slidesToShow": 2}},{"breakpoint": 475, "settings": {"slidesToShow": 1}}]'
+                    data-prevarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_1_4064)">
+                            <path d="M0.676 11.032C0.551879 10.9853 0.414298 10.9899 0.293525 11.0446C0.172751 11.0994 0.0786782 11.1999 0.0320001 11.324C-0.014678 11.4481 -0.0101373 11.5857 0.0446233 11.7065C0.099384 11.8272 0.199879 11.9213 0.324 11.968C5.552 13.928 9.799 17.523 13.076 22.765C13.1463 22.8775 13.2584 22.9574 13.3876 22.9872C13.5168 23.017 13.6525 22.9943 13.765 22.924C13.8775 22.8537 13.9574 22.7416 13.9872 22.6124C14.017 22.4832 13.9943 22.3475 13.924 22.235C10.534 16.811 6.114 13.072 0.676 11.032Z" fill="#1F3650"/>
+                            <path d="M0.676 11.968C0.551879 12.0147 0.414298 12.0101 0.293525 11.9554C0.172751 11.9006 0.0786782 11.8001 0.0320001 11.676C-0.014678 11.5519 -0.0101373 11.4143 0.0446233 11.2935C0.099384 11.1728 0.199879 11.0787 0.324 11.032C5.552 9.072 9.8 5.478 13.076 0.235003C13.1463 0.122551 13.2584 0.0426245 13.3876 0.0128062C13.5168 -0.0170121 13.6525 0.00572032 13.765 0.0760027C13.8775 0.146285 13.9574 0.25836 13.9872 0.387573C14.017 0.516785 13.9943 0.652551 13.924 0.765003C10.534 6.189 6.114 9.928 0.676 11.968Z" fill="#1F3650"/>
+                            <path d="M0.5 12C0.367392 12 0.240215 11.9473 0.146447 11.8536C0.0526784 11.7598 0 11.6326 0 11.5C0 11.3674 0.0526784 11.2402 0.146447 11.1464C0.240215 11.0527 0.367392 11 0.5 11H53.5C53.6326 11 53.7598 11.0527 53.8536 11.1464C53.9473 11.2402 54 11.3674 54 11.5C54 11.6326 53.9473 11.7598 53.8536 11.8536C53.7598 11.9473 53.6326 12 53.5 12H0.5Z" fill="#1F3650"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_4064">
+                            <rect width="54" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>'
+                    data-nextarrow='<svg width="54" height="23" viewBox="0 0 54 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_4068)">
+                        <path d="M53.324 11.032C53.4481 10.9853 53.5857 10.9899 53.7065 11.0446C53.8273 11.0994 53.9213 11.1999 53.968 11.324C54.0147 11.4481 54.0101 11.5857 53.9554 11.7065C53.9006 11.8272 53.8001 11.9213 53.676 11.968C48.448 13.928 44.201 17.523 40.924 22.765C40.8537 22.8775 40.7416 22.9574 40.6124 22.9872C40.4832 23.017 40.3475 22.9943 40.235 22.924C40.1226 22.8537 40.0426 22.7416 40.0128 22.6124C39.983 22.4832 40.0057 22.3475 40.076 22.235C43.466 16.811 47.886 13.072 53.324 11.032Z" fill="#1F3650"/>
+                        <path d="M53.324 11.968C53.4481 12.0147 53.5857 12.0101 53.7065 11.9554C53.8273 11.9006 53.9213 11.8001 53.968 11.676C54.0147 11.5519 54.0101 11.4143 53.9554 11.2935C53.9006 11.1728 53.8001 11.0787 53.676 11.032C48.448 9.072 44.2 5.478 40.924 0.235003C40.8537 0.122551 40.7416 0.0426245 40.6124 0.0128062C40.4832 -0.0170121 40.3475 0.00572032 40.235 0.0760027C40.1226 0.146285 40.0426 0.25836 40.0128 0.387573C39.983 0.516785 40.0057 0.652551 40.076 0.765003C43.466 6.189 47.886 9.928 53.324 11.968Z" fill="#1F3650"/>
+                        <path d="M53.5 12C53.6326 12 53.7598 11.9473 53.8536 11.8536C53.9473 11.7598 54 11.6326 54 11.5C54 11.3674 53.9473 11.2402 53.8536 11.1464C53.7598 11.0527 53.6326 11 53.5 11H0.5C0.367392 11 0.240215 11.0527 0.146447 11.1464C0.0526784 11.2402 0 11.3674 0 11.5C0 11.6326 0.0526784 11.7598 0.146447 11.8536C0.240215 11.9473 0.367392 12 0.5 12H53.5Z" fill="#1F3650"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_4068">
+                        <rect width="54" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>'>
+                        <div class="slider_items">
+                            <div class="img relative aspect-[2/3] full_image">
+                                <img src="./assets/images/featured_product1.png" alt="retailers" class="w-full">
+                                <div class="love_icon absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-[50%] bg-[#fff] flex justify-center items-center">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3493 3.23872L10.3567 3.24516L10.357 3.24542L10.3572 3.24558L10.3576 3.2459L10.3579 3.24618L11.0175 3.83244L11.6803 3.2496L11.6806 3.24934L11.6809 3.24903L11.6812 3.24881L11.6814 3.24861L11.689 3.24205C11.6969 3.23529 11.71 3.22411 11.7281 3.20895C11.7644 3.17861 11.8206 3.13241 11.8947 3.07377C12.0434 2.95631 12.263 2.78996 12.5385 2.60169C13.0941 2.22215 13.8556 1.76828 14.7062 1.44027C15.5617 1.11038 16.4509 0.929547 17.2865 1.02897C18.0925 1.12487 18.9083 1.48681 19.6588 2.35897C20.8901 3.78988 21.1832 5.29997 20.9014 6.85485C20.6104 8.46075 19.6951 10.1484 18.4289 11.7958C16.1515 14.7585 12.9342 17.3444 11.0225 18.7607C9.11136 17.3416 5.87087 14.7652 3.57781 11.8074C2.30255 10.1624 1.38301 8.4777 1.09527 6.87337C0.817059 5.32218 1.11826 3.80791 2.37852 2.36436C3.14413 1.4874 3.96925 1.12376 4.77907 1.02753C5.61748 0.927898 6.50479 1.10897 7.35553 1.43845C8.20181 1.76621 8.95756 2.21977 9.50831 2.59908C9.78151 2.78723 9.99898 2.95345 10.146 3.07078C10.2194 3.12936 10.275 3.17548 10.3108 3.20574C10.3183 3.21209 10.3249 3.21773 10.3306 3.22264C10.3386 3.22943 10.3448 3.23482 10.3493 3.23872Z" stroke="#1F3650" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text_part flex justify-between items-center text-[1.125rem] mt-[10px]">
+                                <div class="text-color5">Daniel Wellington Classic Watch</div>
+                                <div class="price flex gap-[3px]">
+                                    <del class="main_price text-[#A3A0A0] font-[700]">£145</del>
+                                    <div class="offer_price font-[700] text-color5">£98</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img relative aspect-[2/3] full_image">
+                                <img src="./assets/images/featured_product2.png" alt="retailers" class="w-full">
+                                <div class="love_icon absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-[50%] bg-[#fff] flex justify-center items-center">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3493 3.23872L10.3567 3.24516L10.357 3.24542L10.3572 3.24558L10.3576 3.2459L10.3579 3.24618L11.0175 3.83244L11.6803 3.2496L11.6806 3.24934L11.6809 3.24903L11.6812 3.24881L11.6814 3.24861L11.689 3.24205C11.6969 3.23529 11.71 3.22411 11.7281 3.20895C11.7644 3.17861 11.8206 3.13241 11.8947 3.07377C12.0434 2.95631 12.263 2.78996 12.5385 2.60169C13.0941 2.22215 13.8556 1.76828 14.7062 1.44027C15.5617 1.11038 16.4509 0.929547 17.2865 1.02897C18.0925 1.12487 18.9083 1.48681 19.6588 2.35897C20.8901 3.78988 21.1832 5.29997 20.9014 6.85485C20.6104 8.46075 19.6951 10.1484 18.4289 11.7958C16.1515 14.7585 12.9342 17.3444 11.0225 18.7607C9.11136 17.3416 5.87087 14.7652 3.57781 11.8074C2.30255 10.1624 1.38301 8.4777 1.09527 6.87337C0.817059 5.32218 1.11826 3.80791 2.37852 2.36436C3.14413 1.4874 3.96925 1.12376 4.77907 1.02753C5.61748 0.927898 6.50479 1.10897 7.35553 1.43845C8.20181 1.76621 8.95756 2.21977 9.50831 2.59908C9.78151 2.78723 9.99898 2.95345 10.146 3.07078C10.2194 3.12936 10.275 3.17548 10.3108 3.20574C10.3183 3.21209 10.3249 3.21773 10.3306 3.22264C10.3386 3.22943 10.3448 3.23482 10.3493 3.23872Z" stroke="#1F3650" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text_part flex justify-between items-center text-[1.125rem] mt-[10px]">
+                                <div class="text-color5">Men’s Nike Airmax Shoes</div>
+                                <div class="price flex gap-[3px]">
+                                    <del class="main_price text-[#A3A0A0] font-[700]">£145</del>
+                                    <div class="offer_price font-[700] text-color5">£98</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img relative aspect-[2/3] full_image">
+                                <img src="./assets/images/featured_product1.png" alt="retailers" class="w-full">
+                                <div class="love_icon absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-[50%] bg-[#fff] flex justify-center items-center">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3493 3.23872L10.3567 3.24516L10.357 3.24542L10.3572 3.24558L10.3576 3.2459L10.3579 3.24618L11.0175 3.83244L11.6803 3.2496L11.6806 3.24934L11.6809 3.24903L11.6812 3.24881L11.6814 3.24861L11.689 3.24205C11.6969 3.23529 11.71 3.22411 11.7281 3.20895C11.7644 3.17861 11.8206 3.13241 11.8947 3.07377C12.0434 2.95631 12.263 2.78996 12.5385 2.60169C13.0941 2.22215 13.8556 1.76828 14.7062 1.44027C15.5617 1.11038 16.4509 0.929547 17.2865 1.02897C18.0925 1.12487 18.9083 1.48681 19.6588 2.35897C20.8901 3.78988 21.1832 5.29997 20.9014 6.85485C20.6104 8.46075 19.6951 10.1484 18.4289 11.7958C16.1515 14.7585 12.9342 17.3444 11.0225 18.7607C9.11136 17.3416 5.87087 14.7652 3.57781 11.8074C2.30255 10.1624 1.38301 8.4777 1.09527 6.87337C0.817059 5.32218 1.11826 3.80791 2.37852 2.36436C3.14413 1.4874 3.96925 1.12376 4.77907 1.02753C5.61748 0.927898 6.50479 1.10897 7.35553 1.43845C8.20181 1.76621 8.95756 2.21977 9.50831 2.59908C9.78151 2.78723 9.99898 2.95345 10.146 3.07078C10.2194 3.12936 10.275 3.17548 10.3108 3.20574C10.3183 3.21209 10.3249 3.21773 10.3306 3.22264C10.3386 3.22943 10.3448 3.23482 10.3493 3.23872Z" stroke="#1F3650" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text_part flex justify-between items-center text-[1.125rem] mt-[10px]">
+                                <div class="text-color5">Chanel No 5 Au De Toilette</div>
+                                <div class="price flex gap-[3px]">
+                                    <del class="main_price text-[#A3A0A0] font-[700]">£145</del>
+                                    <div class="offer_price font-[700] text-color5">£98</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img relative aspect-[2/3] full_image">
+                                <img src="./assets/images/featured_product2.png" alt="retailers" class="w-full">
+                                <div class="love_icon absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-[50%] bg-[#fff] flex justify-center items-center">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3493 3.23872L10.3567 3.24516L10.357 3.24542L10.3572 3.24558L10.3576 3.2459L10.3579 3.24618L11.0175 3.83244L11.6803 3.2496L11.6806 3.24934L11.6809 3.24903L11.6812 3.24881L11.6814 3.24861L11.689 3.24205C11.6969 3.23529 11.71 3.22411 11.7281 3.20895C11.7644 3.17861 11.8206 3.13241 11.8947 3.07377C12.0434 2.95631 12.263 2.78996 12.5385 2.60169C13.0941 2.22215 13.8556 1.76828 14.7062 1.44027C15.5617 1.11038 16.4509 0.929547 17.2865 1.02897C18.0925 1.12487 18.9083 1.48681 19.6588 2.35897C20.8901 3.78988 21.1832 5.29997 20.9014 6.85485C20.6104 8.46075 19.6951 10.1484 18.4289 11.7958C16.1515 14.7585 12.9342 17.3444 11.0225 18.7607C9.11136 17.3416 5.87087 14.7652 3.57781 11.8074C2.30255 10.1624 1.38301 8.4777 1.09527 6.87337C0.817059 5.32218 1.11826 3.80791 2.37852 2.36436C3.14413 1.4874 3.96925 1.12376 4.77907 1.02753C5.61748 0.927898 6.50479 1.10897 7.35553 1.43845C8.20181 1.76621 8.95756 2.21977 9.50831 2.59908C9.78151 2.78723 9.99898 2.95345 10.146 3.07078C10.2194 3.12936 10.275 3.17548 10.3108 3.20574C10.3183 3.21209 10.3249 3.21773 10.3306 3.22264C10.3386 3.22943 10.3448 3.23482 10.3493 3.23872Z" stroke="#1F3650" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text_part flex justify-between items-center text-[1.125rem] mt-[10px]">
+                                <div class="text-color5">Daniel Wellington Classic Watch</div>
+                                <div class="price flex gap-[3px]">
+                                    <del class="main_price text-[#A3A0A0] font-[700]">£145</del>
+                                    <div class="offer_price font-[700] text-color5">£98</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-[#EBEAE6]">
+        <div class="footer-top-part md:py-[120px] py-[50px]">
+            <div class="container-1440">
+                <div class="footer-widget-wraper flex sm:flex-row flex-col gap-[30px] flex-wrap justify-between">
+                    <div class="left-part sm:max-w-[302px] text-color5">
+                        <p class="lato font-[700] tracking-[1px]">Sign up For Early Access and get updates from Best of British</p>
+                        <form action="#" method="get" class="mt-[20px] pb-[10px] flex *:text-color5 *:text-[18px] border-b-[1px] border-[#CCCBC8]">
+                            <input type="email" placeholder="Email" class="flex-1 placeholder:text-color5 placeholder:text-[18px] pe-[10px]">
+                            <a href="javascript:void(0)" class="underline">Join</a>
+                        </form>
+                    </div>
+                    <div class="right-part-wraper flex-1 flex justify-center">
+                        <div class="right-part max-w-[500px] flex gap-[20px] flex-wrap justify-between flex-1">
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Shop</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Company</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">About Us</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Our Mission</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Info</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-part pb-[38px]">
+            <div class="container-1440">
+                <div class="footer-bottom-part-wraper flex lg:justify-between justify-center gap-[30px] flex-wrap">
+                    <div class="social-links flex gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <a href="javascript:void(0)" class="">Facebook</a>
+                        <a href="javascript:void(0)" class="">Instagram</a>
+                        <a href="javascript:void(0)" class="">LinkedIn</a>
+                    </div>
+                    <div class="coppyright-div flex justify-center flex-wrap gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <p class="text-center">©2024 <a href="javascript:void(0)">BEST OF BRITISH</a>. ALL RIGHTS RESERVED</p>
+                        <a href="javascript:void(0)">PRIVACY POLICY</a>
+                        <a href="javascript:void(0)">TERMS OF USES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.buyer_control_menu .icon_menu').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').removeClass('hidden');              
+            })
+            $('.shadow_bg').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
+            })
+        })
+    </script>
+</body>
+</html>
